@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+    --pink-color: #ff038f;
+    --gold-color: #ffd700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(219, 200, 151);
+    background-image: url('./bckimg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.productCard {
+    position: relative;
+    width: 350px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0; 
+    text-align: center; 
+}
+
+.productCard .imageBox {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: hidden;
+    /* border-radius: 25px; */
+}
+
+.productCard .imageBox img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* border-radius: 25px; */
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover; 
+}
+
+.productCard h1 {
+    font-size: 24px;
+    color:black;
+    margin-top: 20px;
+    text-align: left; 
+    padding-left: 20px; 
+}
+
+.productCard p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+
+
+.productCard .topping-button {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #000;
+}
+
+.productCard button:hover {
+    background-color: black;
+}
+
+
+.toppings {
+    font-size: 14px !important; /* Ensure font size change */
+    text-align: left;
+    margin-top: 10px;
+    white-space: nowrap; 
+}
+
+.topping-button {
+    border: 1px solid var(--gold-color); /* Added border */
+    outline: none;
+    padding: 2px 5px; 
+    border-radius: 3px;
+    background-color: var(--gold-color);
+    color: white;
+    font-size: 12px !important; /* Ensure font size change */
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 5px; 
+    transition: background-color 0.3s ease;
+}
+
+.topping-button:hover {
+    background-color: black;
+}
+
+.price{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.price .cost{
+    font-size: 20px;
+    font-weight: 800;
+    color: goldenrod;
+}
+
+.price .delivery_charge{
+    font-size: 14px;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px 60px;
+    border-radius: 50px;
+    background-color: goldenrod;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
