@@ -103,20 +103,20 @@ body {
 
 
 .toppings {
-    font-size: 14px !important; /* Ensure font size change */
+    font-size: 14px !important; 
     text-align: left;
     margin-top: 10px;
     white-space: nowrap; 
 }
 
 .topping-button {
-    border: 1px solid var(--gold-color); /* Added border */
+    border: 1px solid var(--gold-color); 
     outline: none;
     padding: 2px 5px; 
     border-radius: 3px;
     background-color: var(--gold-color);
     color: white;
-    font-size: 12px !important; /* Ensure font size change */
+    font-size: 12px !important; 
     font-weight: bold;
     cursor: pointer;
     margin-right: 5px; 
@@ -135,7 +135,7 @@ body {
 
 .price .cost{
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 700;
     color: goldenrod;
 }
 
